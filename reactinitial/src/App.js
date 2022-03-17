@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react"
+import React from "react";
+import Fetch from "./components/Fetch";
+import Laptops from "./components/Laptops";
 
 const App = () => {
-
   return (
     <div>
-      Todo...
+      <h1>Laptops</h1>
+      <Fetch />
+      <h1>Short</h1>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
