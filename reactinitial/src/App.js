@@ -1,6 +1,5 @@
 import React from "react";
 import Fetch from "./components/Fetch";
-import Laptops from "./components/Laptops";
 
 const App = () => {
   return (

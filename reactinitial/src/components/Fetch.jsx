@@ -21,13 +21,15 @@ const Fetch = () => {
 
   console.log(laptopData);
 
-  if (loading) return <LoadingMask />;
+  //if (loading) return <LoadingMask />;
   return (
     <div>
-      {laptopData &&
-        laptopData?.map((note, index) => {
-          return <Laptops key={index} note={note} />;
-        })}
+      {loading ? (
+        <LoadingMask />
+      ) : (
+        laptopData &&
+        laptopData?.map((note, index) => <Laptops key={index} note={note} />)
+      )}
     </div>
   );
 };
